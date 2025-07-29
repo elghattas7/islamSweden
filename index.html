@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islam i Sverige - Komplett Guide för Muslimer</title>
+    <meta name="description" content="Omfattande guide om Islam i Sverige. Lär dig om muslimska samhället, moskéer, halal-mat, bönetider och islamisk kultur i Sverige.">
+    <meta name="keywords" content="Islam Sverige, muslimer Sverige, moskéer Sverige, halal mat, bönetider, islamisk kultur, muslimska samhället, Koranen svenska">
+    <meta name="author" content="Islam Sverige Guide">
+    <meta property="og:title" content="Islam i Sverige - Komplett Guide">
+    <meta property="og:description" content="Din kompletta guide till Islam i Sverige - moskéer, samhälle, kultur och praktisk information">
+    <meta property="og:type" content="website">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c5530 0%, #1a4d3a 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #1a4d3a;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        .hero {
+            background: white;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .hero h2 {
+            color: #2c5530;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #2c5530;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #2c5530;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            color: #1a4d3a;
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #2c5530;
+        }
+
+        .card h3 {
+            color: #2c5530;
+            margin-bottom: 1rem;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+            color: #666;
+            font-style: italic;
+        }
+
+        .prayer-times {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .prayer-times table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .prayer-times th,
+        .prayer-times td {
+            padding: 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .prayer-times th {
+            background: #2c5530;
+            color: white;
+        }
+
+        footer {
+            background: #1a4d3a;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.25rem 0;
+            }
+            
+            .hero {
+                padding: 2rem 1rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8e6cf 0%, #dcedc1 100%);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid #2c5530;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2c5530;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            margin: 0.5rem;
+        }
+
+        .btn:hover {
+            background: #1a4d3a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Islam i Sverige</h1>
+            <p>Din kompletta guide till muslimska livet i Sverige</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#hem">Hem</a></li>
+                <li><a href="#mosker">Moskéer</a></li>
+                <li><a href="#bonetider">Bönetider</a></li>
+                <li><a href="#halal">Halal Mat</a></li>
+                <li><a href="#samhalle">Samhälle</a></li>
+                <li><a href="#utbildning">Utbildning</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="hem" class="hero">
+            <h2>Välkommen till Islam i Sverige</h2>
+            <img src="images/mosqueeSuedois.jpeg" alt="Vacker moské i Sverige med svenska flaggan i bakgrunden" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin: 1rem 0;">
+            <p>Sverige är hem för över 600 000 muslimer som utgör en viktig del av det svenska samhället. Denna guide hjälper dig att navigera det muslimska livet i Sverige, från att hitta närmaste moské till att förstå islamisk kultur och traditioner.</p>
+            <a href="#mosker" class="btn">Utforska Moskéer</a>
+            <a href="#bonetider" class="btn">Se Bönetider</a>
+        </section>
+
+        <section id="mosker" class="section">
+            <h2>Moskéer i Sverige</h2>
+            <img src="images/mosqueeSuedois.jpeg" alt="Collage av svenska moskéer - Stockholm, Göteborg, Malmö" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin: 1rem 0;">
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>Stockholm</h3>
+                    <p><strong>Stockholms Islamiska Centrum</strong><br>
+                    Adress: Kapellgränd 10, 116 25 Stockholm<br>
+                    Tel: 08-658 95 45<br>
+                    Fredagsbön: 13:00</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Göteborg</h3>
+                    <p><strong>Göteborgs Islamiska Centrum</strong><br>
+                    Adress: Bergsjöns Islamiska Förening<br>
+                    Tel: 031-123 45 67<br>
+                    Fredagsbön: 13:15</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Malmö</h3>
+                    <p><strong>Malmö Islamiska Centrum</strong><br>
+                    Adress: Industrigatan 21, 213 77 Malmö<br>
+                    Tel: 040-123 45 67<br>
+                    Fredagsbön: 13:30</p>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <h3>Hitta din närmaste moské</h3>
+                <p>Sverige har över 100 moskéer och islamiska center spridda över hela landet. Använd vår interaktiva karta för att hitta den närmaste moskén i ditt område.</p>
+            </div>
+        </section>
+
+        <section id="bonetider" class="section">
+            <h2>Bönetider (Salah)</h2>
+            <img src="images/paysageSuedois.png" alt="Vacker solnedgång över svensk landskap med bönematta" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin: 1rem 0;">
+
+            <p>Bönetiderna varierar beroende på årstid och geografisk plats i Sverige. Här är dagens bönetider för Stockholm:</p>
+
+            <div class="prayer-times">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bön</th>
+                            <th>Tid</th>
+                            <th>Beskrivning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fajr</td>
+                            <td>04:30</td>
+                            <td>Gryningsbön</td>
+                        </tr>
+                        <tr>
+                            <td>Dhuhr</td>
+                            <td>12:45</td>
+                            <td>Middagsbön</td>
+                        </tr>
+                        <tr>
+                            <td>Asr</td>
+                            <td>16:20</td>
+                            <td>Eftermiddagsbön</td>
+                        </tr>
+                        <tr>
+                            <td>Maghrib</td>
+                            <td>19:15</td>
+                            <td>Solnedgångsbön</td>
+                        </tr>
+                        <tr>
+                            <td>Isha</td>
+                            <td>21:30</td>
+                            <td>Nattbön</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="highlight">
+                <p><strong>Viktigt:</strong> Under sommarmånaderna i norra Sverige kan nätterna vara mycket korta eller obefintliga. Konsultera din lokala imam för vägledning om bönetider under dessa perioder.</p>
+            </div>
+        </section>
+
+        <section id="halal" class="section">
+            <h2>Halal Mat i Sverige</h2>
+            <img src="images/halal.png" alt="Halal-certifierade produkter i svensk butik" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin: 1rem 0;">
+
+            <p>Sverige erbjuder ett växande utbud av halal-certifierad mat och produkter. Här är din guide till halal-shopping:</p>
+
+            <div class="halal-category">
+                <h3>Halal-slakterier och Butiker</h3>
+                <ul class="mosque-list">
+                    <li><strong>Al-Salam Slakteri</strong> - Stockholm, Göteborg, Malmö</li>
+                    <li><strong>Medina Halal Market</strong> - Rinkeby, Stockholm</li>
+                    <li><strong>Istanbul Market</strong> - Rosengård, Malmö</li>
+                    <li><strong>Babylon Halal</strong> - Angered, Göteborg</li>
+                </ul>
+            </div>
+
+            <div class="halal-category">
+                <h3>Restauranger</h3>
+                <ul class="mosque-list">
+                    <li><strong>Habibi Restaurant</strong> - Södermalm, Stockholm</li>
+                    <li><strong>Al-Mounia</strong> - Centrum, Göteborg</li>
+                    <li><strong>Babylon Grill</strong> - Malmö Centrum</li>
+                    <li><strong>Istanbul Kebab</strong> - Flera platser i Sverige</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <h3>Halal-certifiering i Sverige</h3>
+                <p>Sök efter dessa certifieringsmärken:</p>
+                <ul>
+                    <li>Svenska Halal-certifieringsorganisationen</li>
+                    <li>Islamic Society in Sweden</li>
+                    <li>Europeiska Halal-certifieringen</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="samhalle" class="section">
+            <h2>Muslimska Samhället i Sverige</h2>
+            <img src="images/familleMusulmane.png" alt="Muslimska familjer vid gemensam aktivitet i Sverige" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin: 1rem 0;">
+
+            <h3>Islamiska Organisationer</h3>
+            <div class="grid">
+                <div class="card">
+                    <h3>Sveriges Muslimska Råd (SMR)</h3>
+                    <p>Paraplyorganisation för muslimska föreningar i Sverige. Arbetar med dialog mellan muslimer och det svenska samhället.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Islamic Society in Sweden</h3>
+                    <p>En av Sveriges äldsta muslimska organisationer, grundad 1962. Fokuserar på utbildning och samhällsintegration.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Svenska Islamiska Akademien</h3>
+                    <p>Utbildningsinstitution som erbjuder islamiska studier och forskning på svenska.</p>
+                </div>
+            </div>
+
+            <h3>Viktiga Islamiska Högtider i Sverige</h3>
+            <div class="highlight">
+                <ul>
+                    <li><strong>Eid al-Fitr</strong> - Firar slutet av Ramadan</li>
+                    <li><strong>Eid al-Adha</strong> - Offerfesten</li>
+                    <li><strong>Mawlid al-Nabi</strong> - Profetens födelsedag</li>
+                    <li><strong>Laylat al-Qadr</strong> - Maktens natt under Ramadan</li>
+                </ul>
+                <p>Många svenska kommuner erkänner dessa högtider och tillåter ledighet för muslimska anställda.</p>
+            </div>
+        </section>
+
+        <section id="utbildning" class="section">
+            <h2>Islamisk Utbildning</h2>
+            <img src="images/enfantLisantCoran.png" alt="Barn som läser Koranen i islamisk skola" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin: 1rem 0;">
+
+            <h3>Islamiska Skolor</h3>
+            <p>Sverige har över 50 islamiska friskolor som kombinerar svensk läroplan med islamisk utbildning:</p>
+
+            <ul class="mosque-list">
+                <li><strong>Al-Azhar Skolan</strong> - Stockholm</li>
+                <li><strong>Islamiska Skolan i Göteborg</strong> - Göteborg</li>
+                <li><strong>Malmö Islamiska Skola</strong> - Malmö</li>
+                <li><strong>Växjö Islamiska Skola</strong> - Växjö</li>
+            </ul>
+
+            <h3>Koranskolor och Vuxenutbildning</h3>
+            <div class="grid">
+                <div class="card">
+                    <h3>Koranskolor för Barn</h3>
+                    <p>Finns vid de flesta moskéer. Undervisar i Koranläsning, arabiska och islamiska värderingar.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Islamiska Studier för Vuxna</h3>
+                    <p>Kurser i islamisk teologi, arabiska språket och islamisk historia erbjuds vid flera center.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Imam-utbildning</h3>
+                    <p>Specialiserade program för de som vill bli imamer eller islamiska lärare i Sverige.</p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Islam i Sverige. Alla rättigheter förbehållna.</p>
+            <p>För mer information, kontakta oss på info@islamsverige.se</p>
+        </div>
+    </footer>
+</body>
+</html>
